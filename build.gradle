@@ -1,0 +1,18 @@
+apply plugin: "java"
+
+compileJava.options.encoding = 'UTF-8'
+
+sourceSets.all {
+    output.resourcesDir = output.classesDir
+}
+
+sourceSets {
+	main {
+		java { srcDir 'src/main/java' }
+		resources { srcDir 'src/main/resource' }
+	}
+}
+
+dependencies {
+    compile fileTree("src/main/resource/lib")
+}

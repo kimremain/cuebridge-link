@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="bridge_youi" transaction-type="RESOURCE_LOCAL">
+		<class>com.jcuesoft.cuebridge.link.model.BexContact</class>
+		<class>com.jcuesoft.cuebridge.link.model.BexMaster</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcAuthHist</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcContact</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcCustom</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcCustomCompany</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcCustomHome</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcFile</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcLoan</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcMisscall</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcSurety</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcSuretyCompany</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcSuretyHome</class>
+		<class>com.jcuesoft.cuebridge.link.model.StCode</class>
+		<class>com.jcuesoft.cuebridge.link.model.StCustomer</class>
+		<class>com.jcuesoft.cuebridge.link.model.StGroupCode</class>
+		<class>com.jcuesoft.cuebridge.link.model.StNoticeTel</class>
+		<class>com.jcuesoft.cuebridge.link.model.StPdt</class>
+		<class>com.jcuesoft.cuebridge.link.model.StPgm</class>
+		<class>com.jcuesoft.cuebridge.link.model.StTeam</class>
+		<class>com.jcuesoft.cuebridge.link.model.StUser</class>
+		<class>com.jcuesoft.cuebridge.link.model.StUserAuth</class>
+		<class>com.jcuesoft.cuebridge.link.model.StUserAuthLog</class>
+		<class>com.jcuesoft.cuebridge.link.model.StUserLog</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcInfoLegal</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcSupply</class>
+        <properties>
+            <property name="datanucleus.NontransactionalRead" value="true"/>
+            <property name="datanucleus.NontransactionalWrite" value="true"/>
+            <property name="datanucleus.ConnectionURL" value="appengine"/>
+            <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@10.1.1.28:1521:BRG"/>
+            <property name="javax.persistence.jdbc.user" value="bridge_youi"/>
+            <property name="javax.persistence.jdbc.password" value="jcu2soft1115"/>
+            <property name="eclipselink.logging.level" value="ALL"/>
+			<!-- Configure connection pool. -->
+            <property name="eclipselink.connection-pool.default.initial" value="2" />
+            <property name="eclipselink.connection-pool.default.min" value="2" />
+            <property name="eclipselink.connection-pool.default.max" value="5" />            
+        </properties>		
+	</persistence-unit>
+	<persistence-unit name="bridge_star" transaction-type="RESOURCE_LOCAL">
+		<class>com.jcuesoft.cuebridge.link.model.BexContact</class>
+		<class>com.jcuesoft.cuebridge.link.model.BexMaster</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcAuthHist</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcContact</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcCustom</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcCustomCompany</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcCustomHome</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcFile</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcLoan</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcMisscall</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcSurety</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcSuretyCompany</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcSuretyHome</class>
+		<class>com.jcuesoft.cuebridge.link.model.StCode</class>
+		<class>com.jcuesoft.cuebridge.link.model.StCustomer</class>
+		<class>com.jcuesoft.cuebridge.link.model.StGroupCode</class>
+		<class>com.jcuesoft.cuebridge.link.model.StNoticeTel</class>
+		<class>com.jcuesoft.cuebridge.link.model.StPdt</class>
+		<class>com.jcuesoft.cuebridge.link.model.StPgm</class>
+		<class>com.jcuesoft.cuebridge.link.model.StTeam</class>
+		<class>com.jcuesoft.cuebridge.link.model.StUser</class>
+		<class>com.jcuesoft.cuebridge.link.model.StUserAuth</class>
+		<class>com.jcuesoft.cuebridge.link.model.StUserAuthLog</class>
+		<class>com.jcuesoft.cuebridge.link.model.StUserLog</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcInfoLegal</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcSupply</class>		
+        <properties>
+            <property name="datanucleus.NontransactionalRead" value="true"/>
+            <property name="datanucleus.NontransactionalWrite" value="true"/>
+            <property name="datanucleus.ConnectionURL" value="appengine"/>
+            <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@10.1.1.28:1521:BRG"/>
+            <property name="javax.persistence.jdbc.user" value="bridge_star"/>
+            <property name="javax.persistence.jdbc.password" value="jcu2soft1115"/>
+            <property name="eclipselink.logging.level" value="ALL"/>
+			<!-- Configure connection pool. -->
+            <property name="eclipselink.connection-pool.default.initial" value="2" />
+            <property name="eclipselink.connection-pool.default.min" value="2" />
+            <property name="eclipselink.connection-pool.default.max" value="5" />             
+        </properties>		
+	</persistence-unit>
+	<persistence-unit name="bridge_mill" transaction-type="RESOURCE_LOCAL">
+		<class>com.jcuesoft.cuebridge.link.model.BexContact</class>
+		<class>com.jcuesoft.cuebridge.link.model.BexMaster</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcAuthHist</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcContact</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcCustom</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcCustomCompany</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcCustomHome</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcFile</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcLoan</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcMisscall</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcSurety</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcSuretyCompany</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcSuretyHome</class>
+		<class>com.jcuesoft.cuebridge.link.model.StCode</class>
+		<class>com.jcuesoft.cuebridge.link.model.StCustomer</class>
+		<class>com.jcuesoft.cuebridge.link.model.StGroupCode</class>
+		<class>com.jcuesoft.cuebridge.link.model.StNoticeTel</class>
+		<class>com.jcuesoft.cuebridge.link.model.StPdt</class>
+		<class>com.jcuesoft.cuebridge.link.model.StPgm</class>
+		<class>com.jcuesoft.cuebridge.link.model.StTeam</class>
+		<class>com.jcuesoft.cuebridge.link.model.StUser</class>
+		<class>com.jcuesoft.cuebridge.link.model.StUserAuth</class>
+		<class>com.jcuesoft.cuebridge.link.model.StUserAuthLog</class>
+		<class>com.jcuesoft.cuebridge.link.model.StUserLog</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcInfoLegal</class>
+		<class>com.jcuesoft.cuebridge.link.model.BrcSupply</class>		
+        <properties>
+            <property name="datanucleus.NontransactionalRead" value="true"/>
+            <property name="datanucleus.NontransactionalWrite" value="true"/>
+            <property name="datanucleus.ConnectionURL" value="appengine"/>
+            <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@10.1.1.28:1521:BRG"/>
+            <property name="javax.persistence.jdbc.user" value="bridge_mill"/>
+            <property name="javax.persistence.jdbc.password" value="jcu2soft1115"/>
+            <property name="eclipselink.logging.level" value="ALL"/>
+			<!-- Configure connection pool. -->
+            <property name="eclipselink.connection-pool.default.initial" value="2" />
+            <property name="eclipselink.connection-pool.default.min" value="2" />
+            <property name="eclipselink.connection-pool.default.max" value="5" />           
+        </properties>		
+	</persistence-unit>	
+</persistence>
